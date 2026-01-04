@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer | Snackable Apps</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
+  <link rel="stylesheet" href="css/pomodoro.css" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKPC7JY0E7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MKPC7JY0E7');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4490023750698733"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>⏱️ Pomodoro Timer</h1>
+    <a href="https://snackable-apps.github.io/snackable-apps-hub/">← Back to menu</a>
+  </header>
+
+  <div class="page-wrapper">
+    <!-- Left Sidebar Ad -->
+    <aside class="ad-sidebar ad-sidebar-left">
+      <div class="ad-banner-vertical">
+        <ins class="adsbygoogle"
+             style="display:block;"
+             data-ad-client="ca-pub-4490023750698733"
+             data-ad-slot="9922848476"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </aside>
+
+    <main>
+    <!-- Timer Selection -->
+    <div class="timer-selection" id="timer-selection">
+      <h2>Select Duration</h2>
+      <div class="duration-buttons">
+        <button class="duration-btn" data-minutes="5">5 min</button>
+        <button class="duration-btn" data-minutes="10">10 min</button>
+        <button class="duration-btn" data-minutes="15">15 min</button>
+        <button class="duration-btn" data-minutes="20">20 min</button>
+        <button class="duration-btn" data-minutes="25">25 min</button>
+        <button class="duration-btn" data-minutes="30">30 min</button>
+      </div>
+      <div class="custom-timer">
+        <label for="custom-minutes">Or enter custom duration (minutes):</label>
+        <div class="custom-input-group">
+          <input type="number" id="custom-minutes" min="1" max="999" placeholder="e.g. 45" />
+          <button id="custom-start-btn" class="duration-btn">Start Custom</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timer Display -->
+    <div class="timer-display" id="timer-display" style="display: none;">
+      <div class="timer-circle">
+        <svg class="timer-svg" viewBox="0 0 200 200">
+          <circle class="timer-bg" cx="100" cy="100" r="90" />
+          <circle class="timer-progress" cx="100" cy="100" r="90" />
+        </svg>
+        <div class="timer-text">
+          <div id="time-display">00:00</div>
+          <button id="start-pause-btn" class="control-btn">Start</button>
+          <button id="reset-btn" class="control-btn secondary">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alarm Notification -->
+    <div class="alarm-notification" id="alarm-notification" style="display: none;">
+      <div class="alarm-content">
+        <h2>⏰ Time's Up!</h2>
+        <p>Your timer has finished.</p>
+        <button id="stop-alarm-btn" class="control-btn">Stop Alarm</button>
+      </div>
+    </div>
+    </main>
+
+    <!-- Right Sidebar Ad -->
+    <aside class="ad-sidebar ad-sidebar-right">
+      <div class="ad-banner-vertical">
+        <ins class="adsbygoogle"
+             style="display:block;"
+             data-ad-client="ca-pub-4490023750698733"
+             data-ad-slot="9922848476"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/pomodoro.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    if(typeof gtag === 'function') gtag('event','ad_impression',{location:'pomodoro_sides'});
+  </script>
+</body>
+</html>
+
