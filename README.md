@@ -19,3 +19,4 @@ A simple, focused Pomodoro timer to boost your productivity.
 
 Part of [Snackable Apps](https://snackable-apps.github.io/snackable-apps-hub/) - quick, fun, and simple mini-apps for everyone.
 
+
